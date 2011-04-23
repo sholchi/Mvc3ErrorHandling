@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<script type="text/javascript">
+
+  function getPropertyData(value) {
+    var x = value.property["data"];
+  }
+
+  function testCapturedError() {
+    var x = getPropertyDataCaptured(null);
+  }
+
+  function getPropertyDataCaptured(value) {
+    try {
+      var x = value.property["data"];
+    } catch (err) {
+      logError(err, arguments.callee.trace());
+    }
+  }
+</script>
+
+<ul>
+  <li><a href="javascript:getPropertyData(null);">execute getPropertyData(null) method.</a></li>
+  <li><a href="javascript:testCapturedError();">execute testCapturedError() method.</a></li>
+</ul>
