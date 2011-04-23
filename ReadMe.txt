@@ -1,1 +1,1 @@
-This project is only an experimental Error handling project which copied from This project copied from http://joel.net/wordpress/?attachment_id=216.
+This project is only an experimental Error handling project which copied from http://joel.net/wordpress/?attachment_id=216.
