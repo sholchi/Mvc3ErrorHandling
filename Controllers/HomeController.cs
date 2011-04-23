@@ -13,5 +13,10 @@ namespace ElmahAndMvc3.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            throw new InvalidOperationException();
+            return View();
+        }
     }
 }
